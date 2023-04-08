@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- <form action="" method="post"></form> -->
-    <form action="submit-form" method="post">
+    <form action="submit-form" method="post" enctype="multipart/form-data">
         <label for="adsoyad">Ad Soyad:</label><br>
         <input type="text" id="adsoyad" name="adsoyad" required><br>
         <label for="mail">Mail Adresi:</label><br>
@@ -34,7 +34,7 @@
           <option value="Diğer">Diğer</option>
         </select><BR></BR>
         <label for="file">Burdan cv yükleyin lütfen</label><br>
-        <input type="file" id="ozgecmis" name="ozgecmis" required><br><br>
+        <input type="file" id="ozgecmis"  accept=".pdf,.doc,.docx" name="ozgecmis" required><br><br>
 <!-- Notlar, Sorular ve Öneriler -->
 
     <!-- Notlar -->
