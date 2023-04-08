@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form123</title>
+</head>
+<body>
+    <!-- <form action="" method="post"></form> -->
+    <form action="submit-form" method="post">
+        <label for="adsoyad">Ad Soyad:</label><br>
+        <input type="text" id="adsoyad" name="adsoyad" required><br>
+        <label for="mail">Mail Adresi:</label><br>
+        <input type="email" id="mail" name="mail" required><br>
+        <label for="tel">İletişim Numarası:</label><br>
+        <input type="tel" id="tel" name="tel" required><br>
+        <label for="adres">Adres:</label><br>
+        <textarea id="adres" name="adres"></textarea><br>
+        <label for="pozisyon">Başvurulan Pozisyon:</label><br>
+        <select id="pozisyon" name="pozisyon" required>
+          <option value="">Lütfen bir pozisyon seçin</option>
+          <option value="yazılım">yazılım</option>
+          <option value="reklam">reklam</option>
+          <option value="ar">ar-ge</option>
+          <option value="Web tasarım">Web tasarım</option>
+        </select><br>
+        <label for="istihdamdurumu">Mevcut İstihdam Durumu:</label><br>
+        <select id="istihdamdurumu" name="istihdamdurumu" required>
+          <option value="Çalışan">Çalışan</option>
+          <option value="işsiz">işsiz</option>
+          <option value="Kendi işinde çalışan">Kendi işinde çalışan</option>
+          <option value="Öğrenci">Öğrenci</option>
+          <option value="Diğer">Diğer</option>
+        </select><BR></BR>
+        <label for="file">Burdan cv yükleyin lütfen</label><br>
+        <input type="file" id="ozgecmis" name="ozgecmis" required><br><br>
+<!-- Notlar, Sorular ve Öneriler -->
+
+    <!-- Notlar -->
+    <div class='form-group'>
+      <label for='notlar'>Notlar:</label><br />
+      <textarea class='form-control' rows='5' cols='50' id='notlar' name='notlar'></textarea><br />
+    </div>
+
+   
+
+    
+
+   
+  <input type="submit" value="Gönder">
+</form>       
+</body>
+</html>
