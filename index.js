@@ -3,6 +3,7 @@ const mysql = require('mysql2');
 const nodemailer = require('nodemailer');   
 const bodyParser = require('body-parser');
 const multer  = require('multer');
+// const mongodb = require('./mongodb.js');
 require('dotenv').config();
 
 const fs = require('fs');
@@ -48,7 +49,7 @@ app.get('/', (req, res) => {
   });
 
 
-  //MYSQL VERİ KAYIT YAPILAN YER
+  // MYSQL VERİ KAYIT YAPILAN YER
 //   app.post('/submit-form', urlencodedParser, function(req, res) {
 //     let adsoyad = req.body.adsoyad;
 //     let mail = req.body.mail;
@@ -72,7 +73,7 @@ app.get('/', (req, res) => {
    
 
 
-//MYSQL OLAN VERİLERİ LİSTELEMEK İÇİN KULLANILAN
+// // MYSQL OLAN VERİLERİ LİSTELEMEK İÇİN KULLANILAN
 // app.get('/listele', (req, res) => {
 //             const sql = 'SELECT * FROM basvuru';
 //             conneciton.query(sql, (err, result) => {
@@ -81,7 +82,7 @@ app.get('/', (req, res) => {
 //               res.send(result);
 //             });
 //           });
- // Dosya yükleme ayarları
+//  Dosya yükleme ayarları
 
 
 app.post('/submit-form', upload.single('ozgecmis'),urlencodedParser, function(req, res) {
